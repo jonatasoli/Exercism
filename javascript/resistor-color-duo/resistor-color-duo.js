@@ -4,11 +4,9 @@
 //
 
 export const decodedValue = array => {
-  let resp = ''
-  for (const i of array)
-    resp += COLORS.indexOf(i).toString()
-  
-  return parseInt(resp.slice(0,2), 10)
+  const first = COLORS.indexOf(array[0])
+  const second = COLORS.indexOf(array[1])
+  return  (first * 10) + second
 };
 
 export const COLORS = [

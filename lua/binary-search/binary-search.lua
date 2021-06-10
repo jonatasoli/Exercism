@@ -2,10 +2,6 @@ return function(array, target)
   local function search_array(min, max)
     if max == 0 then
       return -1
-    elseif target > array[max] then
-      return -1
-    elseif target < array[min] then
-      return -1
     end
 
     while(min <= max) do
